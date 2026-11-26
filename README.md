@@ -28,7 +28,7 @@ The example saves a checkpoint, reloads it, reports validation MAE and RMSE in h
 
 ## Data and model choices
 
-The training entry point reads one directory per dataset, containing `cache.npz` and `metadata.json`. The repository includes the 32-molecule example. For full runs, the [training and data preparation guide](docs/TRAINING.md) gives the upstream data sources, required input tables, preparation commands and expected checksums. Training uses the corresponding saved split for seed 42, 44 or 46 and fits the label scaler on training molecules. The QM9 U₀ task uses atomization energy in kcal/mol.
+Download the encoded inputs and reference labels for [QM8 (21,747 molecules)](https://github.com/mengxin-yang/MolTriNet/releases/download/data-v1/qm8-cache.zip) or [QM9 (133,885 molecules)](https://github.com/mengxin-yang/MolTriNet/releases/download/data-v1/qm9-cache.zip). Extract each archive into its own directory. The training entry point reads `cache.npz` and `metadata.json` from that directory, uses the saved split for seed 42, 44 or 46, and fits the label scaler on training molecules. The QM9 U₀ task uses atomization energy in kcal/mol. [Data release](https://github.com/mengxin-yang/MolTriNet/releases/tag/data-v1) · [Checksums, sources and preparation](docs/TRAINING.md#full-inputs-and-split-identity)
 
 | Model | How a channel's three modal weights are obtained |
 |---|---|

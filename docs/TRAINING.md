@@ -22,7 +22,19 @@ python -m moltrinet evaluate --run runs/example --cache examples/qm8 --split exa
 
 ## Full inputs and split identity
 
-The repository contains the 32-molecule example, the six full ordered molecule-ID splits and the feature-generation scripts. Full training requires the dataset-specific `cache.npz` and `metadata.json`, or the corresponding input table and DFT coordinate files to generate them. The code checks the cache and split digests in `configs/paper.json`. The full processed caches and the exact source workbooks are external inputs. The example and paper-result plots run from the repository alone.
+The [data-v1 release](https://github.com/mengxin-yang/MolTriNet/releases/tag/data-v1) provides the full encoded inputs and reference targets used in training. Each archive contains `cache.npz` and `metadata.json`. The metadata gives the molecular feature schema, target columns, units, source and attribution. The six ordered molecule-ID splits are in the repository. The 32-molecule example and the paper-result plots run from the repository alone.
+
+Run the following from the repository root to download and check both archives:
+
+```sh
+curl -fL https://github.com/mengxin-yang/MolTriNet/releases/download/data-v1/qm8-cache.zip -o qm8-cache.zip
+curl -fL https://github.com/mengxin-yang/MolTriNet/releases/download/data-v1/qm9-cache.zip -o qm9-cache.zip
+sha256sum -c preparation/cache_sha256.txt
+python -m zipfile -e qm8-cache.zip data/qm8
+python -m zipfile -e qm9-cache.zip data/qm9
+```
+
+In Windows PowerShell, use `curl.exe` for the downloads. Compare the output of `Get-FileHash qm8-cache.zip,qm9-cache.zip -Algorithm SHA256` with [the archive checksums](../preparation/cache_sha256.txt). The paper training command also checks the numerical cache and split digests specified in [paper.json](../configs/paper.json).
 
 Each random split has 17,397/2,174/2,176 training/validation/test IDs for QM8 or 107,108/13,388/13,389 for QM9. Each paper run uses the complete cache and the corresponding saved partition. Supply an explicit `--split` for the 32-molecule example.
 
