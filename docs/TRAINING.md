@@ -22,27 +22,19 @@ python -m moltrinet evaluate --run runs/example --cache examples/qm8 --split exa
 
 ## Full inputs and split identity
 
-Download the two processed datasets from the [data-v1 release](https://github.com/mengxin-yang/MolTriNet/releases/tag/data-v1). Each archive contains `cache.npz` and `metadata.json`. The metadata describes the source, target columns and release license. The compressed numerical arrays are the ones used in the entmax experiments.
+The repository contains the 32-molecule example, the six full ordered molecule-ID splits and the feature-generation scripts. Full training requires the dataset-specific `cache.npz` and `metadata.json`, or the corresponding input table and DFT coordinate files to generate them. The code checks the cache and split digests in `configs/paper.json`. The full processed caches and the exact source workbooks are external inputs. The example and paper-result plots run from the repository alone.
 
-```bash
-curl -fL https://github.com/mengxin-yang/MolTriNet/releases/download/data-v1/qm8-cache.zip -o qm8-cache.zip
-curl -fL https://github.com/mengxin-yang/MolTriNet/releases/download/data-v1/qm9-cache.zip -o qm9-cache.zip
-sha256sum -c preparation/cache_sha256.txt
-python -m zipfile -e qm8-cache.zip data/qm8
-python -m zipfile -e qm9-cache.zip data/qm9
-```
+Each random split has 17,397/2,174/2,176 training/validation/test IDs for QM8 or 107,108/13,388/13,389 for QM9. Each paper run uses the complete cache and the corresponding saved partition. Supply an explicit `--split` for the 32-molecule example.
 
-On Windows use `curl.exe` and compare `Get-FileHash qm8-cache.zip,qm9-cache.zip -Algorithm SHA256` against `preparation/cache_sha256.txt`. The loader also hashes the extracted cache. The six split files contain ordered molecule IDs for seeds 42, 44 and 46. Each random split has 17,397/2,174/2,176 training/validation/test IDs for QM8 or 107,108/13,388/13,389 for QM9. Each paper run uses the complete cache and the corresponding saved partition. Supply an explicit `--split` for the 32-molecule example.
-
-QM8 uses 21,747 molecules identified by their original SDF record number, cleaned canonical SMILES and row-aligned DFT coordinates. Its 12 properties comprise two excitation energies (hartree) and two dimensionless oscillator strengths at each of the CC2, PBE0 and CAM levels. We distribute the exact coordinate features used for training, including the 36 structures whose coordinates differ from an alternative QM8 source. The QM8 source project and its license are credited here. [QM8 source](https://github.com/raghurama123/ExcitedStatesQM8) · [QM8 notice](../preparation/notices/QM8-MIT.txt)
+QM8 uses 21,747 molecules identified by their original SDF record number, cleaned canonical SMILES and row-aligned DFT coordinates. Its 12 properties comprise two excitation energies (hartree) and two dimensionless oscillator strengths at each of the CC2, PBE0 and CAM levels. Coordinate identity matters for 36 structures that differ between QM8 sources. [QM8 source](https://github.com/raghurama123/ExcitedStatesQM8) · [QM8 notice](../preparation/notices/QM8-MIT.txt)
 
 QM9 uses all 133,885 stable GDB molecule IDs. The property names, units and column order appear in [paper.json](../configs/paper.json). For the `U0` row, select `internal_energy_0K_atom_kcal_mol`, the 0 K atom-referenced energy with the sign of molecular energy minus isolated-atom energies. The data and isolated-atom reference values are available from the original authors. [QM9 archive](https://doi.org/10.6084/m9.figshare.978904_D12) · [Atomic references](https://doi.org/10.6084/m9.figshare.978904_D9)
 
 For a feature-generation audit using the corresponding tabulated labels, SMILES and raw DFT geometries, install the optional dependencies with `python -m pip install -r preparation/requirements.txt`. Raw-input paths below are supplied by the reader. The raw input workbook SHA256 values are in `configs/paper.json`. The QM8 extractor checks cleaned row IDs against each XYZ header. The QM9 extractor checks the GDB ID, SMILES, properties and atom counts against the XYZ file. Both encode atomwise SMILES tokens, directed molecular graphs and centered 3D coordinates with radial distance and element indicators. Dataset-level feature vocabularies precede splitting. Training-label scaling is fitted per split.
 
 ```bash
-python preparation/qm8.py --table QM8_clean.xlsx --xyz-dir qm8_xyz --output prepared/qm8
-python preparation/qm9.py --table QM9.xlsx --xyz-dir qm9_xyz --output prepared/qm9
+python preparation/qm8.py --table QM8_clean.xlsx --xyz-dir qm8_xyz --output data/qm8
+python preparation/qm9.py --table QM9.xlsx --xyz-dir qm9_xyz --output data/qm9
 ```
 
 ## Paper runs
