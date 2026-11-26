@@ -1,0 +1,40 @@
+{
+  "dataset": "QM8",
+  "dims": {
+    "node_dim": 34,
+    "edge_dim": 15,
+    "vocab_size": 30,
+    "smiles_length": 58,
+    "point_dim": 9,
+    "max_atoms": 26
+  },
+  "target_names": [
+    "E1-CC2",
+    "E2-CC2",
+    "f1-CC2",
+    "f2-CC2",
+    "E1-PBE0",
+    "E2-PBE0",
+    "f1-PBE0",
+    "f2-PBE0",
+    "E1-CAM",
+    "E2-CAM",
+    "f1-CAM",
+    "f2-CAM"
+  ],
+  "target_units": {
+    "E1-CC2": "hartree",
+    "E2-CC2": "hartree",
+    "f1-CC2": "dimensionless",
+    "f2-CC2": "dimensionless",
+    "E1-PBE0": "hartree",
+    "E2-PBE0": "hartree",
+    "f1-PBE0": "dimensionless",
+    "f2-PBE0": "dimensionless",
+    "E1-CAM": "hartree",
+    "E2-CAM": "hartree",
+    "f1-CAM": "dimensionless",
+    "f2-CAM": "dimensionless"
+  },
+  "cache_sha256": "9cb6fba627c1b7f33c62a3a3e20364410edffed706a57ad04bb3ae431f1af019"
+}

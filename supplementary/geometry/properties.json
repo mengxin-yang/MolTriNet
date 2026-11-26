@@ -1,0 +1,462 @@
+{
+  "qm9_mu": {
+    "dataset": "QM9",
+    "target": "dipole_moment",
+    "unit": "Debye",
+    "target_column": 3,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "2473c436208174edaeb8eab95e7f4cd737e3df24610687c4fcd85a69b8b4325a",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "23edfd0b88f95e44c710b9205e067662ce9f5c8f81b7b8f76784ee9405f6cbb3",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_e1cc2": {
+    "dataset": "QM8",
+    "target": "E1-CC2",
+    "unit": "hartree",
+    "target_column": 0,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "c41c55c5cceddcb1e6299e05639900807cd14c53140b41fffa0ab5775229e513",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "7c1505e69eb1062d926c7a4f54d5f2e9b9fc55a0c99d0fbc6e1c8bd0489b2f61",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_alpha": {
+    "dataset": "QM9",
+    "target": "isotropic_polarizability",
+    "unit": "a0^3",
+    "target_column": 4,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "09225bb5d5e122ea25b31d4d79a2cd4ed78e0cb5580224de9558ce41abc923c7",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "8f2f1484d1ff49f0db49b5d5151555c7ddeb16f915e89b95013a11af4dad6578",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_homo": {
+    "dataset": "QM9",
+    "target": "energy_HOMO",
+    "unit": "hartree",
+    "target_column": 5,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "81acc288a843ef94b57b4c769e16fc2e064adcf83bd9b5e39a43fce5ae3742af",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "d823ad431713a8318972073bee4920f8fe24e635d7ea37bf626d511517fe21c4",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_gap": {
+    "dataset": "QM9",
+    "target": "gap",
+    "unit": "hartree",
+    "target_column": 7,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "835044c231923a2180ba74cf110a6884787c7094e6e97b236ef3f8e2d9c2dce9",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "36bb63cad1a48c9ce7cdba1145a4ab991845cb39fa632b68a123b44db0db9108",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_r2": {
+    "dataset": "QM9",
+    "target": "electronic_spatial_extent",
+    "unit": "a0^2",
+    "target_column": 8,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "850706031648299531401e3707f73f9f44a31f080010cb5b51df4d524f894120",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "a0563ee4ac0213badbbd9e732220bc142cb74927aa6223d1fde7f5afd9af62a5",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_zpve": {
+    "dataset": "QM9",
+    "target": "zero_point_vibrational_energy",
+    "unit": "hartree",
+    "target_column": 9,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "559ad390a41fe494545b4ca8ce4f7d14023021300e42ac2f48527054f68cd612",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "d32162bcaf78ed6923b334c9383ee8082af2835a0822d46be2466029bbba7853",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_u0atom": {
+    "dataset": "QM9",
+    "target": "internal_energy_0K_atom_kcal_mol",
+    "unit": "kcal mol^-1",
+    "target_column": 22,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "6847994f3624a469aae74c497e9d12ab19d916d26807fec0aeb3ab96945c7a6f",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "10505bfba0ec33c69c49ee9ba9b2b908040a79c0b390dc5e685aa92867405d08",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm9_cv": {
+    "dataset": "QM9",
+    "target": "heat_capacity_298K",
+    "unit": "cal mol^-1 K^-1",
+    "target_column": 14,
+    "split_counts": {
+      "train": 105992,
+      "val": 13251,
+      "test": 13243
+    },
+    "cache_sha256": {
+      "dft": "744e016fd8f185a0bfe24dc361638817af69a8309ebd1d3b02d625370647d56a",
+      "mmff": "b7ccf308f76a9f9f9faeb4bfd593af775162b02c5230191d3e7cf33c6c6395b5"
+    },
+    "split_sha256": "8478254b30507322f5f570ca0757f6c9cc0e28b8ee526e584a27ee9a4ddaffa1",
+    "etkdg_test_sha256": "ac3db18bfd4d8bdb3169df5070ad670f488ca6daca44e68beb07aa11c65f20c6",
+    "source_hashes": {
+      "train_fusion.py": "b8e3e50fb086e5a9a6cc91fcd1c564bd2f5763fd0cbe82826a6a4c542dedc1da",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "16f9e620f20e97965d03a6c4b2a0b7a2ebab6c3647068e2a5df02434a0bc1a10",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_e2cc2": {
+    "dataset": "QM8",
+    "target": "E2-CC2",
+    "unit": "hartree",
+    "target_column": 1,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "7e53a40a6e6933860c9fbf3a0c830040bb04f857e65124991bc04f02dcbad28c",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "6af1516cab186730ef9e6e10d8d0461bf5a505364733e55df1d19fe623d465ae",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_f1cc2": {
+    "dataset": "QM8",
+    "target": "f1-CC2",
+    "unit": "dimensionless",
+    "target_column": 2,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "9d0a66efa0530c6b6560d65fff3445c0871dac02e57e1a21f315a4ed6e75c3df",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "c7af7bfb2710d15ee7bf0303882de14c604c0cb8a80d432df5d0b29dec9cc8c4",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_f2cc2": {
+    "dataset": "QM8",
+    "target": "f2-CC2",
+    "unit": "dimensionless",
+    "target_column": 3,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "b48b9a105998366f42b81aeca49174f4b05c5b7502ce27adc8c197c90aa54554",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "166d25f79c73d320e7ac5131f51f2c877f044e8787d0d4f7708d4b33bf806f15",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_e1pbe0": {
+    "dataset": "QM8",
+    "target": "E1-PBE0",
+    "unit": "hartree",
+    "target_column": 4,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "1493e58c105648108a7ee12c2ccf075395e0a6290e98b9668b9690f7dcd6a9a4",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "9159a455c7b270272953c1a27a3e72e06ff1896f2d9df71be5cacb880a4a87b2",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_e2pbe0": {
+    "dataset": "QM8",
+    "target": "E2-PBE0",
+    "unit": "hartree",
+    "target_column": 5,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "b543a7378555980d186430493c802c6e564ce1b6156ea61d1edcc791410acda2",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "a8e178df860524aa527a34a70ede7679d596f18a3619217457ea535aad29342f",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_f1pbe0": {
+    "dataset": "QM8",
+    "target": "f1-PBE0",
+    "unit": "dimensionless",
+    "target_column": 6,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "4058f29e95adacc8f42a45ef9c6962966812d5b4450e8a88573d8db320d4ffd0",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "5cf03cc25acdbab52bcef2fc6add0f4d866f421c19fa0143622e93b52616bd56",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_f2pbe0": {
+    "dataset": "QM8",
+    "target": "f2-PBE0",
+    "unit": "dimensionless",
+    "target_column": 7,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "914171439ba33539ce6b73aeff58a5128f6ff4fece92b2f075d2255dfae3cde0",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "048d74eebe04dcdeeffaa7be27f70d701b409b6cc1801948b272ce0534bc1a61",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_e1cam": {
+    "dataset": "QM8",
+    "target": "E1-CAM",
+    "unit": "hartree",
+    "target_column": 8,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "6cb3ef1c8b364c38e8d8b75c175f5930ba953784cb27deb78e39b686dcb26d29",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "2363caa2350f858c43f90143f9e04712c3d5ceaa46a5d01d6be7cb7461d216fd",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_e2cam": {
+    "dataset": "QM8",
+    "target": "E2-CAM",
+    "unit": "hartree",
+    "target_column": 9,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "f57703f8c7caff6107af2d77bf7987022847eba2a5f32ea9ba3e5434fa88cd94",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "aa5cc1b574001650f9717ea26a9c3768e655c712b05d2a7aa38ee1d34113a53e",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_f1cam": {
+    "dataset": "QM8",
+    "target": "f1-CAM",
+    "unit": "dimensionless",
+    "target_column": 10,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "e880a724472f3da53df975153603fba6903a3225b83d169aabfabb6fa7869eef",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "b3ab5fb853c3d57a01ab3aa11c62ada51d8c5b8a5205518a3023db07f5642413",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  },
+  "qm8_f2cam": {
+    "dataset": "QM8",
+    "target": "f2-CAM",
+    "unit": "dimensionless",
+    "target_column": 11,
+    "split_counts": {
+      "train": 17356,
+      "val": 2164,
+      "test": 2169
+    },
+    "cache_sha256": {
+      "dft": "0c9a729d08b7d5279e8cca3f6a4c2f532cc447251fde784fa85216f6d31f3c64",
+      "mmff": "8ad2638fa09ef2708cca7988fb36ee9e264b85032090dbdc9e61fcca667a9099"
+    },
+    "split_sha256": "02fc05a215ffb136b3c60c37df66b7a0ac9a1e7d8fe04183addbed2cd4eb3756",
+    "etkdg_test_sha256": "f777ee7912d545a54f9e599f4a64f4115c59e9e2ce04cf2618842b9fd0b6545c",
+    "source_hashes": {
+      "train_fusion.py": "a8dfe9bbc9476d21dacfeed20100bd8529ab1cfb84de40d13ae34bc878bc807c",
+      "Model.py": "5663048607ab84d1de55bd02ed2353bd7db38ec4ace6bfbcaef22bd3d5dbd715",
+      "data.py": "4d16987bb853a5c297a7b440d8cae3045595c07baaf804591f61c272e87379a8",
+      "independent_feature_gate.py": "279daf7ae76b7a1fc6e3120dc647e901c3eaaec160da3a1525f710c276d2cd89"
+    }
+  }
+}

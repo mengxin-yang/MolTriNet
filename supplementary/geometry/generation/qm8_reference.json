@@ -1,0 +1,211 @@
+{
+  "author_xyz_sha256": "01c20f132d6215a856955df01bf1fd65a646cd531fbda190b0a21e5c85c4c39e",
+  "token_to_idx": {
+    "PAD": 0,
+    "#": 1,
+    "(": 2,
+    ")": 3,
+    "1": 4,
+    "2": 5,
+    "3": 6,
+    "4": 7,
+    "=": 8,
+    "C": 9,
+    "F": 10,
+    "N": 11,
+    "O": 12,
+    "[H]": 13,
+    "[N+]": 14,
+    "[O-]": 15,
+    "[c-]": 16,
+    "[n+]": 17,
+    "[n-]": 18,
+    "c": 19,
+    "n": 20,
+    "o": 21
+  },
+  "nonsingleton_groups": [
+    {
+      "group_id": 906,
+      "ids": [
+        906,
+        910
+      ]
+    },
+    {
+      "group_id": 915,
+      "ids": [
+        915,
+        919
+      ]
+    },
+    {
+      "group_id": 925,
+      "ids": [
+        925,
+        929
+      ]
+    },
+    {
+      "group_id": 4126,
+      "ids": [
+        4126,
+        4130
+      ]
+    },
+    {
+      "group_id": 4182,
+      "ids": [
+        4182,
+        4224,
+        7420
+      ]
+    },
+    {
+      "group_id": 4452,
+      "ids": [
+        4452,
+        4459
+      ]
+    },
+    {
+      "group_id": 4455,
+      "ids": [
+        4455,
+        4462
+      ]
+    },
+    {
+      "group_id": 4563,
+      "ids": [
+        4563,
+        10832
+      ]
+    },
+    {
+      "group_id": 4584,
+      "ids": [
+        4584,
+        10891
+      ]
+    },
+    {
+      "group_id": 5177,
+      "ids": [
+        5177,
+        5181
+      ]
+    },
+    {
+      "group_id": 5187,
+      "ids": [
+        5187,
+        5191
+      ]
+    },
+    {
+      "group_id": 5197,
+      "ids": [
+        5197,
+        5201
+      ]
+    },
+    {
+      "group_id": 5215,
+      "ids": [
+        5215,
+        5219
+      ]
+    },
+    {
+      "group_id": 5224,
+      "ids": [
+        5224,
+        5228
+      ]
+    },
+    {
+      "group_id": 5234,
+      "ids": [
+        5234,
+        5238
+      ]
+    },
+    {
+      "group_id": 5244,
+      "ids": [
+        5244,
+        5248
+      ]
+    },
+    {
+      "group_id": 5271,
+      "ids": [
+        5271,
+        15106
+      ]
+    },
+    {
+      "group_id": 21137,
+      "ids": [
+        21137,
+        21145
+      ]
+    },
+    {
+      "group_id": 21144,
+      "ids": [
+        21144,
+        21196
+      ]
+    },
+    {
+      "group_id": 21146,
+      "ids": [
+        21146,
+        21183
+      ]
+    },
+    {
+      "group_id": 21584,
+      "ids": [
+        21584,
+        21588
+      ]
+    },
+    {
+      "group_id": 21656,
+      "ids": [
+        21656,
+        21658
+      ]
+    },
+    {
+      "group_id": 21657,
+      "ids": [
+        21657,
+        21661
+      ]
+    },
+    {
+      "group_id": 21659,
+      "ids": [
+        21659,
+        21660
+      ]
+    }
+  ],
+  "array_sha256": {
+    "ids": "915461688bc48dd3700ff48d7f988879f98d6ffc1390563777d38a5f3d87d835",
+    "targets": "afe2327bebed95229a57efbcf331e8219e8e3ea9f7c8ea0a0f93d9a6b7b96e82",
+    "graph_x": "178f5a5e69ef9b744cdfec449234d58ffe6c89742f8f648f27edad8284c50b74",
+    "node_offsets": "07fe51f5676aeb39a249aae71c36367ffea993d5d816c1a70684d66136770335",
+    "edge_offsets": "da8c6310a9696cd223ee95ce77efef60bcfdfa16b298268c4f22d76cb9f0f3a9",
+    "edge_index": "5c47f39d7ff0d302f932021bfbaf4b8f24d3399f8c6f4ae36ffa01dde3e3be7c",
+    "edge_attr": "98801ebfb9ea41de703feffeff2f24a249e66a1a01112650f98a0e449955f41f",
+    "smiles_ids": "5020c874c753635dba9ef06a2bc254d97435a1575859a2d71e6aff65f53bcf16",
+    "points": "d0c5760030fcb76102ca22b67c5bae399356e44815cf0ca6ead07ea8322cd200",
+    "point_lengths": "6720de9bfec16517fb3ba73b33d4f4d6af313ad7238c5bd4f735f754a3dda449",
+    "group_ids": "ead3d30587a3fbd981b149fc7cfd8780742faf77691b2868ea4083c610d9f63a"
+  }
+}

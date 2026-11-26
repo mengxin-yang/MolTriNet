@@ -1,0 +1,132 @@
+{
+  "datasets": {
+    "qm8": {
+      "dims": {
+        "node_dim": 34,
+        "edge_dim": 15,
+        "vocab_size": 30,
+        "smiles_length": 58,
+        "point_dim": 9,
+        "max_atoms": 26
+      },
+      "target_names": [
+        "E1-CC2",
+        "E2-CC2",
+        "f1-CC2",
+        "f2-CC2",
+        "E1-PBE0",
+        "E2-PBE0",
+        "f1-PBE0",
+        "f2-PBE0",
+        "E1-CAM",
+        "E2-CAM",
+        "f1-CAM",
+        "f2-CAM"
+      ],
+      "cache_sha256": "3c2f86be3f3a872fde48af9041e1eb27d83ea4f12f33d357dec798a6d69cc03a",
+      "source_table_sha256": "fd2e39c1e1c3245bfd18718609de242b40a80de1f2d1bb955a5cf71cb3f31dbc",
+      "targets": {
+        "E1-CC2": "hartree",
+        "E2-CC2": "hartree",
+        "f1-CC2": "dimensionless",
+        "f2-CC2": "dimensionless",
+        "E1-PBE0": "hartree",
+        "E2-PBE0": "hartree",
+        "f1-PBE0": "dimensionless",
+        "f2-PBE0": "dimensionless",
+        "E1-CAM": "hartree",
+        "E2-CAM": "hartree",
+        "f1-CAM": "dimensionless",
+        "f2-CAM": "dimensionless"
+      },
+      "split_sha256": {
+        "42": "e5519dc54bed27d21d8f154092044bad8eabdf47708e707c3ac47f57151ced63",
+        "44": "6ba43a6f18f80874b9444d0b5a430a44afdb9da37cc9d98e578fb88ee9a8ef6c",
+        "46": "57efc346473ef3222dc6e94e3b821e01562d32042125938a47c1a3aa4daf8453"
+      }
+    },
+    "qm9": {
+      "dims": {
+        "node_dim": 31,
+        "edge_dim": 14,
+        "vocab_size": 21,
+        "smiles_length": 22,
+        "point_dim": 9,
+        "max_atoms": 29
+      },
+      "target_names": [
+        "rotational_constant_A",
+        "rotational_constant_B",
+        "rotational_constant_C",
+        "dipole_moment",
+        "isotropic_polarizability",
+        "energy_HOMO",
+        "energy_LUMO",
+        "gap",
+        "electronic_spatial_extent",
+        "zero_point_vibrational_energy",
+        "internal_energy_0K",
+        "internal_energy_298K",
+        "enthalpy_298K",
+        "free_energy_298K",
+        "heat_capacity_298K",
+        "n_H",
+        "n_C",
+        "n_N",
+        "n_O",
+        "n_F",
+        "atom_reference_U0_hartree",
+        "internal_energy_0K_atom_hartree",
+        "internal_energy_0K_atom_kcal_mol",
+        "atomization_energy_0K_kcal_mol_positive"
+      ],
+      "cache_sha256": "c42e44ec05788afb284438e6e346be6fc1b5805838dfe97e79f9ae4d1495b5cc",
+      "source_table_sha256": "ff7369bbd69b84caa25e663aa4fd2be4134be60cc4cc6b509ec445ebe15e5067",
+      "targets": {
+        "dipole_moment": "D",
+        "isotropic_polarizability": "a0^3",
+        "energy_HOMO": "hartree",
+        "gap": "hartree",
+        "electronic_spatial_extent": "a0^2",
+        "zero_point_vibrational_energy": "hartree",
+        "internal_energy_0K_atom_kcal_mol": "kcal mol^-1",
+        "heat_capacity_298K": "cal mol^-1 K^-1"
+      },
+      "split_sha256": {
+        "42": "3fb107c825cde9400a9e32c18d6b41237b4455e4eb1ddb299838e64ea7823b06",
+        "44": "cf059906c724e433f3cc0fb363ba9310e370edc31d31f661913ff331bb20cac3",
+        "46": "7d5e033af5eec550eda1b93323516506115255e2b9ed6b9739868ac7bfadfb4d"
+      }
+    }
+  },
+  "architecture": {
+    "d_smiles": 256,
+    "smiles_num_heads": 8,
+    "smiles_num_layers": 6,
+    "cnn_kernels": 256,
+    "d_hidden": 256,
+    "graph_num_layers": 6,
+    "d_point_cloud": 1024,
+    "d_point_output": 256,
+    "d_output": 1,
+    "dropout": 0.1
+  },
+  "training": {
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "batch_size": 128,
+    "max_epochs": 200,
+    "grad_clip": 0.5,
+    "torch_num_threads": 8,
+    "early_stop_patience": 10,
+    "early_stop_min_delta": 0.0001,
+    "scheduler": {
+      "factor": 0.5,
+      "patience": 8
+    }
+  }
+}
